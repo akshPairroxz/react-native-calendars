@@ -18,7 +18,8 @@ export default function getStyle(theme: Theme = {}) {
       flex: 1
     },
     monthView: {
-      backgroundColor: appStyle.calendarBackground
+      backgroundColor: appStyle.calendarBackground,
+      ...appStyle.monthViewStyle
     },
     week: {
       marginVertical: appStyle.weekVerticalMargin,
