@@ -42,6 +42,7 @@ export interface Theme {
   selectedDayTextColor?: string;
   monthTextColor?: string;
   selectedDayBackgroundColor?: string;
+  selectedDayBorderRadius?:number,
   arrowColor?: string;
   textDisabledColor?: string;
   textInactiveColor?: string;
@@ -78,6 +79,7 @@ export interface Theme {
   dotStyle?: object;
   arrowStyle?: ViewStyle;
   todayBackgroundColor?: string;
+  todayBorderRadius?:number;
   disabledDotColor?: string;
   inactiveDotColor?: string;
   todayDotColor?: string;
