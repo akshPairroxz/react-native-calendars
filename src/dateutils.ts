@@ -30,7 +30,11 @@ export function isLTE(a: XDate, b: XDate) {
 
 export function formatNumbers(date: any) {
   const numbers = XDate.locales[XDate.defaultLocale].numbers;
-  return numbers ? date.toString().replace(latinNumbersPattern, (char: any) => numbers[+char]) : date;
+   let num = date
+    if(date <10){
+        num = `0${num}`
+    }
+  return numbers ? date.toString().replace(latinNumbersPattern, (char: any) => numbers[+char]) :num;
 }
 
 export function fromTo(a: XDate, b: XDate) {
